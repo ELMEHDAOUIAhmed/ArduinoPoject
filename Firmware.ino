@@ -114,7 +114,7 @@ String sendStatusAndRecords() {
   // Check if the lock is currently open or closed
   String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "Open" : "Closed";
   // Construct a message with the lock status and some example records
-  String record = "Records: \n Lock is " + lockStatus + "\n- " + dateTimeString +"\n";
+  String record = "Records: \n Lock is " + lockStatus + "\n";
   return record;
   delay(1000);
   }
