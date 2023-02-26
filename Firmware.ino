@@ -9,7 +9,6 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
-SoftwareSerial BTSerial(18, 19); // RX | TX inverse between them
 HardwareSerial& bthc05(Serial1);
 
 // Table of accepted NFC tag UIDs
@@ -18,7 +17,6 @@ int unlockAttempts = 0;
 
 void setup() {
   Serial.begin(9600); // Initialize serial communication
-  BTSerial.begin(9600); // Initialize bluetooth communication
   SPI.begin(); // Initialize SPI bus
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
@@ -46,42 +44,42 @@ void loop() {
       {
       Serial.print(F("UID tag : "));
       Serial.println(uid);
-      Serial.println(F("Access granted"));
+      Serial.println(F(" Access granted"));
       digitalWrite(LOCK_PIN, HIGH); // Open the lock
       Serial.print(F("Lock: "));
       Serial.print(LOCK_PIN);
       Serial.println(F(" has been opened"));
-      String message = "Access granted, lock "+ LOCK_PIN;
+      String message = " Access granted, lock "+ LOCK_PIN;
       message += "opened , UID tag :" + uid;
-      BTSerial.println(message); // Send message via bluetooth
+      bthc05.println(message); // Send message via bluetooth
       delay(1500);
       }   
       else {
       Serial.print(F("UID tag : "));
       Serial.println(uid);
-      Serial.println(F("Access granted")); 
+      Serial.println(F(" Access granted")); 
       digitalWrite(LOCK_PIN, LOW); // Close the lock     
       Serial.print(F("Lock: "));
       Serial.print(LOCK_PIN);  
       Serial.println(F(" has been closed"));    
-      String message = "Access granted, lock "+ LOCK_PIN;
+      String message = " Access granted, lock "+ LOCK_PIN;
       message +=  " closed, UID tag: " + uid;
-      BTSerial.println(message); // Send message via bluetooth
+      bthc05.println(message); // Send message via bluetooth
       delay(1500);
       }
     }
      else {
       Serial.print(F("UID tag : "));
       Serial.println(uid);
-      Serial.println(F("Access denied"));
-      String message = "Access denied, UID tag: " + uid;
-      BTSerial.println(message); // Send message via bluetooth
+      Serial.println(F(" Access denied"));
+      String message = " Access denied, UID tag: " + uid;
+      bthc05.println(message); // Send message via bluetooth
       delay(1500);      
       unlockAttempts++;
       if (unlockAttempts == 4) {
-      BTSerial.println("Warning 4 attempts to unlock lock");
+      bthc05.println("Warning 4 attempts to unlock lock");
       Serial.println(F("Warning 4 attempts to unlock lock"));
-      BTSerial.println("Locking down for 30 seconds");
+      bthc05.println("Locking down for 30 seconds");
       Serial.println(F("Locking down for 30 seconds"));
 
       delay(30000);
@@ -123,7 +121,6 @@ void sendStatusAndRecords(){
     if(bthc05.available()){
 
       // fix after , this code now sends record when i receving anything in bluetooth, we want after to send record only if we receive the word "status"
-      // fix also using 2 bluetooth variables and itialising two also , 
     bthc05Str = bthc05.readStringUntil('\n'); 
     //if(bthc05Str == "status"){
       bthc05.println(record);
