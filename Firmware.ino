@@ -23,7 +23,6 @@ void setup() {
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
   bthc05.begin(9600); 
-  bthc05.println("Bluetooth On....")
 }
 
 void loop() {
@@ -87,11 +86,13 @@ void loop() {
 
       delay(30000);
       }
+
+      
         
     }
     }
 
-    
+    sendStatusAndRecords();
 
 }
 
@@ -110,21 +111,25 @@ String getUIDAsString(byte *uidBytes, byte uidSize) {
   return uidString;
 }
 
+void sendStatusAndRecords(){
 
 // Function to send status and records via bluetooth
-void sendStatusAndRecords() {
 
   // Check if the lock is currently open or closed
   String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "Open" : "Closed";
   // Construct a message with the lock status and some example records
   String record = "Records: \n Lock is " + lockStatus + "\n";
+    String bthc05Str = "";
     if(bthc05.available()){
-    String received = bthc05Str;
-    if(received == "status"){
+
+      // fix after , this code now sends record when i receving anything in bluetooth, we want after to send record only if we receive the word "status"
+      // fix also using 2 bluetooth variables and itialising two also , 
+    bthc05Str = bthc05.readStringUntil('\n'); 
+    //if(bthc05Str == "status"){
       bthc05.println(record);
 
-    }
+    //}
   }
   
-  }
+}
 
