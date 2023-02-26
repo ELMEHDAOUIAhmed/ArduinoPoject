@@ -9,7 +9,8 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
-SoftwareSerial BTSerial(19, 18); // RX | TX inverse between them
+SoftwareSerial BTSerial(18, 19); // RX | TX inverse between them
+HardwareSerial& bthc05(Serial1);
 
 // Table of accepted NFC tag UIDs
 String UIDs[] = {"B4 B2 70 1C", "2F 6F 36 7A","80 63 2B 32"};
@@ -21,6 +22,8 @@ void setup() {
   SPI.begin(); // Initialize SPI bus
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
+  bthc05.begin(9600); 
+  bthc05.println("Bluetooth On....")
 }
 
 void loop() {
@@ -115,10 +118,10 @@ void sendStatusAndRecords() {
   String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "Open" : "Closed";
   // Construct a message with the lock status and some example records
   String record = "Records: \n Lock is " + lockStatus + "\n";
-    if(BTSerial.available() > 0){
-    String received = BTSerial.readString();
+    if(bthc05.available()){
+    String received = bthc05Str;
     if(received == "status"){
-      BTSerial.println(record);
+      bthc05.println(record);
 
     }
   }
