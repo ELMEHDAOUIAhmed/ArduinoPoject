@@ -9,7 +9,7 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
-SoftwareSerial BTSerial(19, 18); // RX | TX
+SoftwareSerial BTSerial(19, 18); // RX | TX inverse between them
 
 // Table of accepted NFC tag UIDs
 String UIDs[] = {"B4 B2 70 1C", "2F 6F 36 7A","80 63 2B 32"};
@@ -119,7 +119,6 @@ void sendStatusAndRecords() {
     String received = BTSerial.readString();
     if(received == "status"){
       BTSerial.println(record);
-      
 
     }
   }
