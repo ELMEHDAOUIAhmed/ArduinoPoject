@@ -20,7 +20,7 @@ void setup() {
   SPI.begin(); // Initialize SPI bus
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
-  bthc05.begin(9600); 
+  bthc05.begin(9600); // Initialize bluetooth module
 }
 
 void loop() {
