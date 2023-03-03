@@ -170,7 +170,7 @@ void openLock(String uid)
 
       String message = "Access granted, lock " + String(LOCK_PIN) + " opened , UID tag :" + uid;
       bthc05.println(message); // Send message via bluetooth
-      delay(500);
+      delay(1000);
 
 }
 
@@ -189,7 +189,7 @@ void closeLock(String uid)
 
       String message = "Access granted, lock " + String(LOCK_PIN) + " closed , UID tag :" + uid;
       bthc05.println(message); // Send message via bluetooth
-      delay(500);
+      delay(1000);
 }
 
 void denidedAccess(String uid)

@@ -14,10 +14,14 @@ We also use phone geolocation to track users and keep bikes safe.
 # 4- add password checks before allowing to add or clear uid codes from bluetooth
 # 5- change BT Pin code using AT commands
 
+#
 BTserial.print("AT+NAME=NewName\r\n");
 BTserial.print("AT+PSWD=NewPassword\r\n");
 
 using these commands
+
+
+# Buy new BUZZER and use code to make sound no opened , closed and denided access
 
 
 
