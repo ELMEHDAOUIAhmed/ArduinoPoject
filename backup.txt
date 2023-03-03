@@ -6,7 +6,6 @@
 #define SS_PIN 53
 #define RST_PIN 3
 #define LOCK_PIN 2 // Lock-style Solenoid 12VDC
-#define BUZZER_PIN 4 // Buffer PIN
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
@@ -43,50 +42,44 @@ void loop() {
 
       if (digitalRead(LOCK_PIN) == LOW)
       {
-      Serial.print(F("UID tag : ")); // Serial.print() is only used for debugging remvoe after
+      Serial.print(F("UID tag : ")); // Serial.print() is only used for debugging
       Serial.println(uid);
       Serial.println(F("Access granted"));
-
       digitalWrite(LOCK_PIN, HIGH); // Open the lock
-
       Serial.print(F("Lock: "));
       Serial.print(LOCK_PIN);
       Serial.println(F("has been opened"));
-
-      String message = "Access granted, lock " + String(LOCK_PIN) + " opened , UID tag :" + uid;
+      String message = "Access granted, lock " + LOCK_PIN;
+      message += "opened , UID tag :" + uid;
       bthc05.println(message); // Send message via bluetooth
       delay(500);
       }   
       else {
-      Serial.print(F("UID tag : ")); // Serial.print() is only used for debugging remvoe after
+      Serial.print(F("UID tag : "));
       Serial.println(uid);
       Serial.println(F("Access granted")); 
-
       digitalWrite(LOCK_PIN, LOW); // Close the lock     
-
       Serial.print(F("Lock: "));
       Serial.print(LOCK_PIN);  
       Serial.println(F("has been closed"));    
-
-      String message = "Access granted, lock " + String(LOCK_PIN) + " closed , UID tag :" + uid;
+      String message ="Access granted, lock " + LOCK_PIN;
+      message +="closed, UID tag: " + uid;
       bthc05.println(message); // Send message via bluetooth
       delay(500);
       }
     }
      else {
-      Serial.print(F("UID tag : ")); // Serial.print() is only used for debugging remvoe after
+      Serial.print(F("UID tag : "));
       Serial.println(uid);
       Serial.println(F("Access denied"));
-
-      String message ="Access denied, UID tag: " + uid + "is not allowed to open Lock" + String(LOCK_PIN);
+      String message ="Access denied, UID tag: " + uid;
       bthc05.println(message); // Send message via bluetooth
       delay(1500);      
       unlockAttempts++;
       if (unlockAttempts == 4) {
       bthc05.println("Warning 4 attempts to unlock lock");
-      bthc05.println("Locking down for 30 seconds");
-
       Serial.println(F("Warning 4 attempts to unlock lock"));
+      bthc05.println("Locking down for 30 seconds");
       Serial.println(F("Locking down for 30 seconds"));
 
       delay(30000);
@@ -138,19 +131,4 @@ void sendStatusAndRecords(){
   }
   
 }
-
-// future improvement add lock pin constant as a entry to the function so then you can display which lock was opened , for now we only have one lock
-
-void openLock()
-{
-
-}
-
-void closeLock()
-{
-
-}
-
-void denidedAccess()
-{}
 
