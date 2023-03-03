@@ -7,21 +7,20 @@
 #define RST_PIN 3
 #define LOCK_PIN 2 // Lock-style Solenoid 12VDC
 #define BUZZER_PIN 4 // Buffer PIN
-#define MAX_UIDS 2 
+#define MAX_UIDS 1 
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
 HardwareSerial& bthc05(Serial1);
 
 // Table of accepted NFC tag UIDs
-String UIDs[] = {"B4 B2 70 1C", "2F 6F 36 7A","80 63 2B 32"};
 int unlockAttempts = 0;
-int counter = 0;
 String uid="";
 String BT_uid="";
 String BT_String="";
+int allowedUIDs_count =0;
 byte uidByte[4];
-String allowedUIDs[1]; // dont forget to add function to test if uid already exists before adding it to array
+String allowedUIDs;
 String AdminUIDs[]={"B4 B2 70 1C", "2F 6F 36 7A"}; // static uids for admins to
 
 
@@ -37,6 +36,55 @@ void setup() {
 
 void loop() {
 
+
+    if(bthc05.available()) // Looking for Bluetooth Received Data
+    {
+      
+    BT_String = bthc05.readStringUntil('\n'); 
+    BT_uid = BT_String;
+    BT_String.trim(); // Remove any leading or trailing white space
+    if(BT_String == "status"){
+      sendStatusAndRecords();
+    }
+    else if (BT_String == "clear") // clear table from previous added uids
+    {
+
+    allowedUIDs="";
+    bthc05.println("Cleared");
+    allowedUIDs_count =0;
+
+    }
+    else // IMPORTANT after add function to check for password before adding a new uid into allowed uids 
+    {
+    convertUidStringToBytes(BT_String, uidByte);     
+
+
+      if (allowedUIDs_count < MAX_UIDS)
+      {
+        allowedUIDs= BT_String;
+        allowedUIDs_count++;
+        Serial.println("Added UID to allowed list: " + BT_String);
+        bthc05.println("Added UID to allowed list: " + BT_String);
+
+      }
+        else if (allowedUIDs_count==MAX_UIDS)
+        {
+        Serial.println("Maximum number of allowed UID tags reached. \n");
+        bthc05.println("Maximum number of allowed UID tags reached. \n");
+        
+
+        }
+        else if (strcmp(allowedUIDs.c_str(),BT_String.c_str()) == 0)
+        {
+        Serial.println("UID tag already in allowed list.");
+        bthc05.println("UID tag already in allowed list.");
+ 
+        }
+
+      }
+     
+    }
+
   // Look for new cards
   if (mfrc522.PICC_IsNewCardPresent() && mfrc522.PICC_ReadCardSerial()) 
   {
@@ -44,13 +92,14 @@ void loop() {
     uid = getUIDAsString(mfrc522.uid.uidByte, mfrc522.uid.size);
 
     bool accepted = false;
-    for (int i = 0; i < sizeof(allowedUIDs) / sizeof(allowedUIDs[0]); i++) {
-      if (allowedUIDs[i] == uid) {
+
+    for (int i = 0; i < sizeof(AdminUIDs) / sizeof(AdminUIDs[0]); i++) {
+      if (AdminUIDs[i] == uid) {
         accepted = true;
         break;
       }
     }
-    if (accepted) 
+    if (accepted || (strcmp(allowedUIDs.c_str(),uid.c_str()) == 0)) 
     {
       unlockAttempts = 0;
       if (digitalRead(LOCK_PIN) == LOW)
@@ -67,66 +116,7 @@ void loop() {
     
    }   
 
-    if(bthc05.available()){
-      
-    BT_String = bthc05.readStringUntil('\n'); 
-    BT_uid = BT_String;
-    BT_String.trim(); // Remove any leading or trailing white space
-    if(BT_String == "status"){
-      sendStatusAndRecords();
-    }
-    else if (BT_String == "clear") // clear table from previous added uids
-    {
-    for(int i=0;i<MAX_UIDS;i++)
-    {
-    allowedUIDs[i]= "";
-    }
-    counter=0;
-    bthc05.println("Cleared");
-    }
-    else // IMPORTANT after add function to check for password before adding a new uid into allowed uids 
-    {
-    convertUidStringToBytes(BT_String, uidByte);     
 
-    bool test = false;
-
-      if (counter < MAX_UIDS)
-      {
-        allowedUIDs[counter] = BT_String;
-        counter++;
-        Serial.println("Added UID to allowed list: " + BT_String);
-        bthc05.println("Added UID to allowed list: " + BT_String);
-
-      }
-        else if (counter==MAX_UIDS)
-        {
-        Serial.println("Maximum number of allowed UID tags reached. \n");
-        bthc05.println("Maximum number of allowed UID tags reached. \n");
-        
-        // debug only loop
-        for(int i=0;i<MAX_UIDS;i++)
-        {
-          Serial.println(allowedUIDs[i]);
-        }
-
-        }
-        else
-        {
-        Serial.println("UID tag already in allowed list.");
-        bthc05.println("UID tag already in allowed list.");
-
-        Serial.println(counter);
-        for (int i=0;i<2;i++)
-        {
-
-          Serial.println(allowedUIDs[i]);
-        }
-        
-        }
-
-      }
-     
-    }
                         
 
  }
