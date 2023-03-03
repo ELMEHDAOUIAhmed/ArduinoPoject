@@ -11,7 +11,7 @@
 
 MFRC522 mfrc522(SS_PIN, RST_PIN); // Create MFRC522 instance
 
-HardwareSerial& bthc05(Serial1);
+HardwareSerial& bthc05(Serial1); // Create bthc05 instance
 
 // Table of accepted NFC tag UIDs
 int unlockAttempts = 0;
@@ -41,7 +41,7 @@ void loop() {
     {
       
     BT_String = bthc05.readStringUntil('\n'); 
-    BT_uid = BT_String;
+    // BT_uid = BT_String;
     BT_String.trim(); // Remove any leading or trailing white space
     if(BT_String == "status"){
       sendStatusAndRecords();
@@ -59,7 +59,7 @@ void loop() {
 
       if (allowedUIDs_count < MAX_UIDS)
       {
-        allowedUIDs= BT_String;
+        allowedUIDs=BT_String;
         allowedUIDs_count++;
         Serial.println("Added UID to allowed list: " + BT_String);
         bthc05.println("Added UID to allowed list: " + BT_String);
@@ -72,7 +72,8 @@ void loop() {
         
 
         }
-        else if (strcmp(allowedUIDs.c_str(),BT_String.c_str()) == 0)
+        
+        else if (strcmp(allowedUIDs.c_str(),BT_String.c_str()) == 0) // wont be executed because Max allowed UID tags is 1 , wrote it incase we add more in future 
         {
         Serial.println("UID tag already in allowed list.");
         bthc05.println("UID tag already in allowed list.");
@@ -90,13 +91,14 @@ void loop() {
     uid = getUIDAsString(mfrc522.uid.uidByte, mfrc522.uid.size);
 
     bool accepted = false;
-
+    // If uid exists in AdminUIDs accepted=true;
     for (int i = 0; i < sizeof(AdminUIDs) / sizeof(AdminUIDs[0]); i++) {
       if (AdminUIDs[i] == uid) {
         accepted = true;
         break;
       }
     }
+    // check if String receiving equals allowedUids String
     if (accepted || (strcmp(allowedUIDs.c_str(),uid.c_str()) == 0)) 
     {
       unlockAttempts = 0;
@@ -135,7 +137,7 @@ void sendStatusAndRecords()
 }
 
 
-// Convert the UID byte array to a string
+// Convert the UID byte array to a string 
 String getUIDAsString(byte *uidBytes, byte uidSize) {
   String uidString = "";
   for (byte i = 0; i < uidSize; i++) {
@@ -211,7 +213,8 @@ void denidedAccess(String uid)
       }
 }
 
-void convertUidStringToBytes(String uidString, byte uidBytes[]) {
+//not used 03/03/2023 10:45 PM
+void convertUidStringToBytes(String uidString, byte uidBytes[]) { 
   int byteValue;
   for (int i = 0; i < uidString.length(); i += 2) {
     byteValue = strtoul(uidString.substring(i, i+2).c_str(), NULL, 16);
