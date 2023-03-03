@@ -21,7 +21,7 @@ String BT_String="";
 int allowedUIDs_count =0;
 byte uidByte[4];
 String allowedUIDs;
-String AdminUIDs[]={"B4 B2 70 1C", "2F 6F 36 7A"}; // static uids for admins to
+String AdminUIDs[]={"80 63 2B 32"}; // static uids for admins to
 
 
 //things to fix, only 1 allowed dynamique uid from BT
@@ -48,15 +48,13 @@ void loop() {
     }
     else if (BT_String == "clear") // clear table from previous added uids
     {
-
     allowedUIDs="";
     bthc05.println("Cleared");
     allowedUIDs_count =0;
-
     }
     else // IMPORTANT after add function to check for password before adding a new uid into allowed uids 
     {
-    convertUidStringToBytes(BT_String, uidByte);     
+    //convertUidStringToBytes(BT_String,uidByte);     
 
 
       if (allowedUIDs_count < MAX_UIDS)
