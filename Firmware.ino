@@ -27,7 +27,7 @@ String AdminUIDs[]={"80 63 2B 32"}; // static uids for admins to
 //things to fix, only 1 allowed dynamique uid from BT
 
 void setup() {
-  Serial.begin(9600); // Initialize serial communication
+  Serial.begin(9600); // Initialize serial communication 
   SPI.begin(); // Initialize SPI bus
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
