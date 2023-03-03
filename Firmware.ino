@@ -121,11 +121,13 @@ void sendStatusAndRecords(){
     if(bthc05.available()){
 
       // fix after , this code now sends record when i receving anything in bluetooth, we want after to send record only if we receive the word "status"
+      
     bthc05Str = bthc05.readStringUntil('\n'); 
-    //if(bthc05Str == "status"){
+    bthc05Str.trim(); // Remove any leading or trailing white space
+    if(bthc05Str == "status"){
       bthc05.println(record);
 
-    //}
+    }
   }
   
 }
