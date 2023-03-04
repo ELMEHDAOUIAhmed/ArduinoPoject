@@ -2,10 +2,22 @@ Remerciements
 
 Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers notre promotrice et enseignante, Mme Bahia ZEBBANE, qui nous a accompagnés avec patience et enthousiasme tout au long de ce projet et pendant nos 2ème et 3ème années de licence. Nous souhaitons également remercier les membres du jury, x et y, pour avoir examiner et évaluer notre travail.
 
-
 Chapitre 1
 Etat de l’art
+
+
+Définition de l’Internet des objets
+
 L'IoT (Internet of Things ) en français "L’Internet des objets" est un système de communication entre les objets physiques et les systèmes informatiques, qui permet aux objets de collecter, de stocker et d'échanger des données. L'IoT utilise une variété de technologies de communication, telles que les réseaux sans fil, les capteurs, les appareils mobiles, les services cloud et les protocoles de communication standard, pour permettre une communication transparente entre les objets et les systèmes informatiques. Les données collectées par les objets peuvent être utilisées pour des applications telles que la surveillance à distance, la gestion des ressources, la maintenance prédictive, l'automatisation des processus, la sécurité et bien d'autres encore. L'IoT est considéré comme une technologie clé pour la transformation numérique des entreprises et a un potentiel énorme pour créer de nouveaux modèles d'affaires et améliorer la qualité de vie des gens.
+
+
+Potentiel de l’Internet des Objets
+
+L'Internet des objets (IoT) représente un domaine de technologie en pleine croissance, qui offre un potentiel énorme dans divers secteurs tels que la santé, la logistique, l'agriculture, l'énergie, etc. En connectant les objets physiques au réseau, l'IoT permet la collecte et l'analyse de données en temps réel, ce qui peut aider à améliorer l'efficacité, la sécurité, la durabilité et la qualité de vie. Par exemple, les capteurs IoT peuvent surveiller les conditions environnementales, la qualité de l'air, la consommation d'énergie, etc. Les appareils IoT peuvent également être contrôlés à distance, ce qui peut faciliter la gestion et l'automatisation des processus. Enfin, l'IoT peut favoriser la création de nouveaux produits et services innovants, ainsi que de nouveaux modèles commerciaux basés sur les données. Cependant, il convient également de prendre en compte les enjeux liés à la sécurité, à la confidentialité et à l'éthique des données, ainsi qu'à la gestion des infrastructures et des normes.
+
+
+
+
 
 Solution déjà réaliser
 Solution 1:
@@ -27,4 +39,8 @@ San Antonio BCycle[3] est un système de partage de vélos en libre-service à S
 Notre solution :
 
 Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les utilisateurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
+
+
+
+
 
