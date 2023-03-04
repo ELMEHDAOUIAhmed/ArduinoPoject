@@ -1,3 +1,30 @@
-Resumer :
+Remerciements
 
-de tout 
+Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers notre promotrice et enseignante, Mme Bahia ZEBBANE, qui nous a accompagnés avec patience et enthousiasme tout au long de ce projet et pendant nos 2ème et 3ème années de licence. Nous souhaitons également remercier les membres du jury, x et y, pour avoir examiner et évaluer notre travail.
+
+
+Chapitre 1
+Etat de l’art
+L'IoT (Internet of Things ) en français "L’Internet des objets" est un système de communication entre les objets physiques et les systèmes informatiques, qui permet aux objets de collecter, de stocker et d'échanger des données. L'IoT utilise une variété de technologies de communication, telles que les réseaux sans fil, les capteurs, les appareils mobiles, les services cloud et les protocoles de communication standard, pour permettre une communication transparente entre les objets et les systèmes informatiques. Les données collectées par les objets peuvent être utilisées pour des applications telles que la surveillance à distance, la gestion des ressources, la maintenance prédictive, l'automatisation des processus, la sécurité et bien d'autres encore. L'IoT est considéré comme une technologie clé pour la transformation numérique des entreprises et a un potentiel énorme pour créer de nouveaux modèles d'affaires et améliorer la qualité de vie des gens.
+
+Solution déjà réaliser
+Solution 1:
+
+Airbike[1] est une plateforme de partage de vélos sans station qui a pour but de rendre le transport en ville rapide, pratique et sain, et de fournir un moyen de couvrir la dernière partie du trajet pour atteindre sa destination. Airbike utilise une technologie brevetée développée en Australie qui se combine avec une application smartphone pour offrir un accès et une commodité accrue à un vélo lorsque vous en avez le plus besoin. Le système utilise la géolocalisation et les codes QR pour déverrouiller les vélos, et permet aux utilisateurs de payer pour leurs trajets à l'aide de l'application. Airbike vise à réduire la congestion routière et à créer un transport plus efficace dans les villes pour le bénéfice de tous.
+
+Solution 2 :
+ 
+Mobike[2] était une autre application populaire de partage de vélos qui était disponible avant la fin de l'année 2020. Mobike opérait dans de nombreuses villes à travers le monde et permettait aux utilisateurs de trouver et de louer des vélos en utilisant l'application Mobike. Les vélos de Mobike étaient équipés d'un GPS et pouvaient être localisés à l'aide de l'application. Les utilisateurs peuvent déverrouiller les vélos en utilisant un code QR et payer pour leurs trajets en utilisant l'application.
+
+
+
+Solution 3:
+
+San Antonio BCycle[3] est un système de partage de vélos en libre-service à San Antonio, Texas, aux États-Unis. Il offert stations de vélos équipées de systèmes de verrouillage électroniques, la technologie RFID pour suivre et gérer les vélos, une application mobile pour localiser les vélos et les stations, la gestion en ligne des comptes utilisateurs, ainsi que la technologie GPS pour collecter des données sur les itinéraires et les modèles d'utilisation des vélos, ce qui peut aider à améliorer le système et planifier des expansions futures. Le système vise à encourager une mobilité plus durable et à réduire la congestion routière dans la ville.
+
+
+
+Notre solution :
+
+Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les utilisateurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
+
