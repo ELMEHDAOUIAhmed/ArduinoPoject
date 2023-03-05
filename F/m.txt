@@ -4,16 +4,28 @@ Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers not
 
 Chapitre 1
 Etat de l’art
+Introduction
 
+L'IoT (Internet des Objets) est une technologie en pleine expansion qui est en train de changer notre façon de vivre et de travailler. L'IoT permet la connexion et la communication entre différents objets physiques tels que les smartphones, les montres connectées, les capteurs, les thermostats, les voitures, les maisons, les usines, les villes intelligentes, et bien d'autres encore. Ces objets peuvent collecter des données, communiquer entre eux et avec des systèmes informatiques pour offrir une multitude de services et d'applications, allant de la surveillance de la santé, la gestion de l'énergie, la sécurité, la gestion de la logistique, à la gestion de la production industrielle. L'IoT offre des possibilités infinies et a le potentiel de transformer de nombreux secteurs économiques en créant de nouveaux modèles d'affaires, en améliorant la qualité de vie des gens et en contribuant à la création d'une société plus durable.
 
 Définition de l’Internet des objets
 
-L'IoT (Internet of Things ) en français "L’Internet des objets" est un système de communication entre les objets physiques et les systèmes informatiques, qui permet aux objets de collecter, de stocker et d'échanger des données. L'IoT utilise une variété de technologies de communication, telles que les réseaux sans fil, les capteurs, les appareils mobiles, les services cloud et les protocoles de communication standard, pour permettre une communication transparente entre les objets et les systèmes informatiques. Les données collectées par les objets peuvent être utilisées pour des applications telles que la surveillance à distance, la gestion des ressources, la maintenance prédictive, l'automatisation des processus, la sécurité et bien d'autres encore. L'IoT est considéré comme une technologie clé pour la transformation numérique des entreprises et a un potentiel énorme pour créer de nouveaux modèles d'affaires et améliorer la qualité de vie des gens.
+	L'IoT (Internet of Things), en français "L’Internet des objets" est une technologie de communication permettant la collecte, le stockage,l'analyse et l'échange de données entre les objets physiques et les systèmes informatiques. Cette technologie utilise différents types de technologies de communication, telles que les réseaux sans fil, les capteurs, les appareils mobiles, les services cloud et les protocoles de communication standard.
+
+	 Les données collectées peuvent être utilisées pour diverses applications telles que la surveillance à distance, la gestion des ressources, la maintenance prédictive, l'automatisation des processus, la sécurité, et bien d'autres encore. 
+	
+	L'IoT est considéré comme une technologie clé pour la transformation numérique des entreprises et a un potentiel énorme pour créer de nouveaux modèles d'affaires et améliorer la qualité de vie des gens.
+
+	En fin de compte, l’Internet des objets est un concept qui manque d'une définition standard et unifiée, car il englobe un vaste domaine. Au lieu de cela, il se compose d'un ensemble de définitions, chacune mettant en évidence un aspect différent. Deux visions majeures de l'Internet des objets sont identifiables : la vision conceptuelle et la vision technique.[4]
 
 
 Potentiel de l’Internet des Objets
 
 L'Internet des objets (IoT) représente un domaine de technologie en pleine croissance, qui offre un potentiel énorme dans divers secteurs tels que la santé, la logistique, l'agriculture, l'énergie, etc. En connectant les objets physiques au réseau, l'IoT permet la collecte et l'analyse de données en temps réel, ce qui peut aider à améliorer l'efficacité, la sécurité, la durabilité et la qualité de vie. Par exemple, les capteurs IoT peuvent surveiller les conditions environnementales, la qualité de l'air, la consommation d'énergie, etc. Les appareils IoT peuvent également être contrôlés à distance, ce qui peut faciliter la gestion et l'automatisation des processus. Enfin, l'IoT peut favoriser la création de nouveaux produits et services innovants, ainsi que de nouveaux modèles commerciaux basés sur les données. Cependant, il convient également de prendre en compte les enjeux liés à la sécurité, à la confidentialité et à l'éthique des données, ainsi qu'à la gestion des infrastructures et des normes.
+
+Domaines d’application de l’Internet des Objets (dernier point)
+
+
 
 
 
@@ -38,7 +50,416 @@ San Antonio BCycle[3] est un système de partage de vélos en libre-service à S
 
 Notre solution :
 
-Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les utilisateurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
+Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les visiteurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Introduction générale
+("Ce sera écrit à la fin, lorsque nous aurons une meilleure compréhension de notre sujet.")
+.
+.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Chapitre 3
+Étude conceptuelle
+Introduction
+.
+.
+.
+Objectifs de la solution proposée
+.
+.
+.
+Ressources matérielles
+Dans cette section, nous énumérons et présentons tous les composants électroniques utilisés dans la conception de la serrure électrique/station intelligente. Il est important de noter que ces composants respectent les critères de basse consommation d'énergie et de faible coût budgétaire.
+
+Carte programmable Arduino mega 2560 r3
+
+L'Arduino Mega 2560 R3 est une carte de développement électronique open source conçue pour les projets nécessitant une grande puissance de calcul et une multitude d'entrées/sorties. Cette carte est basée sur un microcontrôleur ATmega2560 d'Atmel, qui dispose de 256 Ko de mémoire flash pour le programme, 8 Ko de mémoire SRAM et 4 Ko de mémoire EEPROM.
+
+Les spécifications techniques de l'Arduino Mega 2560 R3 sont les suivantes :
+
+Microcontrôleur : ATmega2560
+Tension d'alimentation : 5V
+Tension d'entrée (recommandée) : 7-12V
+Tension d'entrée (limite) : 6-20V
+Broches d'entrée/sortie numériques : 54 (dont 15 peuvent être utilisées comme sorties PWM)
+Broches d'entrée analogique : 16
+Courant continu par broche d'entrée/sortie : 20 mA
+Courant continu pour la broche 3,3V : 50 mA
+Courant continu pour la broche 5V : 800 mA
+Mémoire flash : 256 Ko (dont 8 Ko utilisés par le chargeur de démarrage)
+SRAM : 8 Ko
+EEPROM : 4 Ko
+Fréquence d'horloge : 16 MHz
+
+L'Arduino Mega 2560 R3 est compatible avec le logiciel Arduino, qui permet de programmer facilement la carte à l'aide du langage de programmation Wiring. Cette carte est largement utilisée dans les projets de domotique, de robotique, de contrôle industriel, etc.
+
+
+
+
+
+
+
+
+Figure x.x – Carte Arduino mega 2560 r3. [x]
+
+
+Module RFID Lecteur de cartes - RC522
+
+Le lecteur de cartes RFID RC522 est un module électronique permettant de lire les données stockées sur les cartes RFID (Radio-Frequency Identification). Ce module utilise la technologie RFID pour communiquer avec les cartes sans contact, ce qui permet une lecture rapide et sans contact physique.
+
+Les spécifications techniques du lecteur de cartes RFID RC522 sont les suivantes :
+
+Fréquence de fonctionnement : 13,56 MHz
+Distance de lecture : jusqu'à 3 cm
+Vitesse de transmission : jusqu'à 10 Mbit/s
+Interface de communication : SPI
+Tension d'alimentation : 3,3V
+Consommation électrique : moins de 80 mA en lecture/écriture
+Dimensions : 60 mm x 38 mm x 8 mm
+Le lecteur de cartes RFID RC522 est compatible avec les microcontrôleurs Arduino, Raspberry Pi, etc. Il peut être utilisé dans divers projets tels que la gestion d'accès, le suivi de produits, le contrôle de présence, etc. Ce module est livré avec une antenne intégrée et un connecteur standard SPI, ce qui facilite son intégration dans des circuits électroniques existants.
+
+
+
+
+
+
+
+
+
+
+
+Figure x.x – RFID Lecteur de cartes - RC522. [x]
+
+Module HC-05 série Bluetooth
+
+Le module série Bluetooth HC-05 est un module électronique permettant d'établir une communication sans fil entre des dispositifs électroniques via la technologie Bluetooth. Ce module est conçu pour une utilisation facile avec les microcontrôleurs Arduino, Raspberry Pi, etc.
+
+Les spécifications techniques du module série Bluetooth HC-05 sont les suivantes :
+
+Technologie Bluetooth : Bluetooth 2.0 + EDR (Enhanced Data Rate)
+Fréquence de fonctionnement : 2,4 GHz
+Portée de communication : jusqu'à 10 mètres en champ libre
+Tension d'alimentation : 3,6V - 6V DC
+Consommation électrique : moins de 40 mA en communication active
+Interface de communication : UART (Universal Asynchronous Receiver/Transmitter)
+Vitesse de transmission : de 1,2 Kbit/s à 1 Mbit/s
+Dimensions : 28 mm x 15 mm x 2,35 mm
+Le module série Bluetooth HC-05 est facile à utiliser et peut être configuré pour fonctionner en mode maître ou esclave. Il peut être utilisé dans divers projets tels que la domotique, la robotique, la télémétrie, etc. Ce module est livré avec une antenne intégrée et un connecteur standard UART, ce qui facilite son intégration dans des circuits électroniques existants.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure x.x – HC-05 série Bluetooth. [x]
+
+Serrure électrique solénoïde
+
+Le solénoïde de verrouillage de style "Lock-style" est un composant électronique qui permet d'activer un mécanisme de verrouillage ou de déverrouillage grâce à une impulsion électrique. Ce type de solénoïde est largement utilisé dans les projets de domotique, les systèmes de contrôle d'accès, les distributeurs automatiques, etc.
+
+Les spécifications techniques du solénoïde de verrouillage de style "Lock-style" sont les suivantes :
+
+Tension nominale : 12V DC
+Courant de fonctionnement : 400mA (à une température de 20°C)
+Course : 10 mm
+Force de traction : 1,2 kg (minimum)
+Temps de réponse : moins de 1 seconde
+Dimensions : 27 mm x 29 mm x 18 mm
+Le solénoïde de verrouillage de style "Lock-style" est facile à utiliser et à installer. Il peut être activé à l'aide d'un signal électrique de 12V DC et convient parfaitement aux projets nécessitant une activation rapide et fiable d'un mécanisme de verrouillage ou de déverrouillage. Ce solénoïde est également livré avec un connecteur standard à deux broches, ce qui facilite son intégration dans des circuits électroniques existants.
+
+
+
+
+
+
+
+Figure x.x – Solénoïde de verrouillage. [x]
+
+N-Channel MOSFET 60V 30A
+
+Le MOSFET à canal N est un composant électronique qui permet de contrôler un courant élevé en utilisant une faible tension de commande. Cette version spécifique a une tension maximale de 60V et une capacité de courant de 30A.
+
+
+
+
+
+
+Diode
+La diode redresseuse est un composant électronique qui permet de convertir un courant alternatif en courant continu. Cette version spécifique peut gérer jusqu'à 1A et 50V.
+
+
+
+
+
+
+Résistance 
+La résistance de 1K Ohm est un composant électronique qui permet de limiter le courant dans un circuit électronique.
+
+
+
+
+
+Batterie
+La batterie Samsung 18650 25R est une batterie rechargeable au lithium-ion ayant une tension nominale de 3,7V et une capacité de 6800mAh.
+
+
+
+
+
+
+
+Câbles de prototypage
+Les fils de pontage sont des câbles utilisés pour connecter différents composants électroniques entre eux ,
+
+
+
+
+
+La plaque d'essai 
+La plaque d'essai (Breadboard) est une plaque de prototypage qui permet de connecter facilement différents composants électroniques sans avoir à souder.
+
+
+
+
+
+
+
+
+
+
+Ressources logicielles
+
+Dans cette section, nous présentons les différents logiciels, langages de programmation et environnements de travail utilisés pour le développement et la configuration des composants de notre réseau de capteurs sans fil.
+
+Figma design
+Circuito.io
+Visual Studio Code
+Arduino IDE
+Github Desktop
+C++
+Python
+
+
+
+.
+.
+.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Bibliographie
+
+[1] https://airbike.network/about/ Fevrier 2023
+[2] https://en.wikipedia.org/wiki/Mobike/ Fevrier 2023
+[3] https://sanantonio.bcycle.com/ Fevrier 2023
+[4] https://www.futura-sciences.com/tech/definitions/internet-internet-objets-15158/?source=post_page--------------------------- Mars 2023
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Solution déjà réaliser
+
+
+
+Il existe plusieurs projets qui permettent l'allocation de vélos. Voici quelques exemples :
+
+Vélib' à Paris : Vélib' est un système de vélos en libre-service disponible dans la ville de Paris depuis 2007. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station. Le système est géré par la société JCDecaux et compte environ 20 000 vélos répartis dans plus de 1 800 stations à travers la ville.
+
+Citi Bike à New York : Citi Bike est un système de vélos en libre-service disponible à New York depuis 2013. Le système compte plus de 14 000 vélos répartis dans plus de 800 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
+
+Santander Cycles à Londres : Santander Cycles est un système de vélos en libre-service disponible à Londres depuis 2010. Le système compte plus de 11 000 vélos répartis dans plus de 750 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
+
+Vélo'v à Lyon : Vélo'v est un système de vélos en libre-service disponible dans la ville de Lyon depuis 2005. Le système compte environ 5 000 vélos répartis dans plus de 300 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
+
+BIXI à Montréal : BIXI est un système de vélos en libre-service disponible à Montréal depuis 2009. Le système compte plus de 7 000 vélos répartis dans plus de 600 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
+
+
+
+Bien que ces projets aient tous pour objectif de fournir un système de vélos en libre-service pour permettre aux utilisateurs de se déplacer facilement et rapidement en ville, il existe des différences entre eux et notre projet. Voici quelques exemples :
+
+
+
 
 
 
