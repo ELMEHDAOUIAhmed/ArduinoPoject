@@ -2,6 +2,12 @@ Remerciements
 
 Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers notre promotrice et enseignante, Mme Bahia ZEBBANE, qui nous a accompagnés avec patience et enthousiasme tout au long de ce projet et pendant nos 2ème et 3ème années de licence. Nous souhaitons également remercier les membres du jury, x et y, pour avoir examiner et évaluer notre travail.
 
+Introduction générale
+("Ce sera écrit à la fin, lorsque nous aurons une meilleure compréhension de notre sujet.")
+.
+.
+.
+
 Chapitre 1
 Etat de l’art
 Introduction
@@ -23,8 +29,29 @@ Potentiel de l’Internet des Objets
 
 L'Internet des objets (IoT) représente un domaine de technologie en pleine croissance, qui offre un potentiel énorme dans divers secteurs tels que la santé, la logistique, l'agriculture, l'énergie, etc. En connectant les objets physiques au réseau, l'IoT permet la collecte et l'analyse de données en temps réel, ce qui peut aider à améliorer l'efficacité, la sécurité, la durabilité et la qualité de vie. Par exemple, les capteurs IoT peuvent surveiller les conditions environnementales, la qualité de l'air, la consommation d'énergie, etc. Les appareils IoT peuvent également être contrôlés à distance, ce qui peut faciliter la gestion et l'automatisation des processus. Enfin, l'IoT peut favoriser la création de nouveaux produits et services innovants, ainsi que de nouveaux modèles commerciaux basés sur les données. Cependant, il convient également de prendre en compte les enjeux liés à la sécurité, à la confidentialité et à l'éthique des données, ainsi qu'à la gestion des infrastructures et des normes.
 
-Domaines d’application de l’Internet des Objets (dernier point)
+Domaines d’application de l’Internet des Objets 
 
+L'IoT est un domaine en pleine expansion qui s'étend à de nombreux secteurs tels que la santé, l'agriculture, la logistique, l'industrie, l'environnement, les villes intelligentes, etc. En utilisant des capteurs, des appareils mobiles, des réseaux sans fil et des services cloud, l'IoT permet la collecte et l'échange de données pour améliorer la prise de décision, la productivité et la qualité de vie.
+
+Voici quelques domaines de l'IoT et ce qu'ils apportent :
+
+Santé : Les objets connectés peuvent aider à surveiller la santé des patients à distance, à prévenir les maladies, à améliorer la qualité de vie et à réduire les coûts des soins de santé.
+
+Logistique : L'IoT peut être utilisé pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité.
+
+Sécurité : Les dispositifs IoT peuvent être utilisés pour surveiller les zones de haute sécurité, les biens et les personnes, pour assurer la sécurité physique, réduire les risques et améliorer les réponses en cas d'urgence.
+
+Énergie : L'IoT peut être utilisé pour surveiller la consommation d'énergie et optimiser les processus énergétiques, ce qui peut aider à réduire les coûts et l'empreinte carbone.
+
+Agriculture : Les capteurs IoT peuvent aider à surveiller l'humidité du sol, les conditions météorologiques et les niveaux de nutriments pour aider les agriculteurs à prendre des décisions plus éclairées pour augmenter le rendement des cultures.
+
+Industrie : Les objets connectés peuvent être utilisés pour surveiller et optimiser les processus de production industrielle, pour améliorer l'efficacité, réduire les coûts et augmenter la productivité.
+
+Villes intelligentes : Les objets connectés peuvent être utilisés pour surveiller et gérer les infrastructures de la ville, telles que l'éclairage public, la circulation, les déchets, pour améliorer la qualité de vie des habitants et la durabilité environnementale.
+
+Maison connectée : L'IoT peut être utilisé pour connecter les différents appareils et systèmes domestiques, tels que la sécurité, la domotique, l'énergie, pour améliorer le confort, la commodité et la sécurité des occupants.
+
+Dans chaque domaine, l'IoT apporte des avantages tels que la collecte de données en temps réel, l'optimisation des processus, la réduction des coûts et l'amélioration de la qualité de vie. Cependant, il est important de considérer les défis liés à la sécurité et à la protection des données pour s'assurer que cette technologie est utilisée de manière responsable et efficace.
 
 
 
@@ -53,6 +80,7 @@ Notre solution :
 Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les visiteurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
 
 
+Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers le chap 2)
 
 
 
@@ -73,11 +101,9 @@ Notre solution a pour but de rendre le transport des étudiants, des enseignants
 
 
 
-Introduction générale
-("Ce sera écrit à la fin, lorsque nous aurons une meilleure compréhension de notre sujet.")
-.
-.
-.
+
+
+
 
 
 
@@ -119,6 +145,9 @@ Introduction
 .
 .
 .
+
+
+
 Objectifs de la solution proposée
 .
 .
