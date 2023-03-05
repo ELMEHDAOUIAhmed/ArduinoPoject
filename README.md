@@ -12,14 +12,13 @@ We also use phone geolocation to track users and keep bikes safe.
 # 2-make the code more secure using tests before executing functions (90% done)
 # 3-make the code dynamique ( next milestone) ( Via bluetooth Done)
 # 4- add password checks before allowing to add or clear uid codes from bluetooth
-# 5- change BT Pin code using AT commands
+# 5- change BT Pin code using AT commands ( didnt work fine another way)
 
 #
-BTserial.print("AT+NAME=NewName\r\n");
-BTserial.print("AT+PSWD=NewPassword\r\n");
+BTserial.print("AT+NAME=NewName\r\n"); //didnt work fine another way
+BTserial.print("AT+PSWD=NewPassword\r\n"); didnt work fine another way
 
-using these commands
-
+# 6- Encrypt uid using maybe md5 TBD
 
 # Buy new BUZZER and use code to make sound no opened , closed and denided access
 
