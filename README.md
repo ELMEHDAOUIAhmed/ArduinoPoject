@@ -19,6 +19,7 @@ BTserial.print("AT+NAME=NewName\r\n"); //didnt work fine another way
 BTserial.print("AT+PSWD=NewPassword\r\n"); didnt work fine another way
 
 # 6- Encrypt uid using maybe md5 TBD
+# 7- add notification in case something happends
 
 # Buy new BUZZER and use code to make sound no opened , closed and denided access
 
