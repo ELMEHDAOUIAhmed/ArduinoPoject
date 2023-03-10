@@ -344,7 +344,6 @@ use case
 Sequence
 
 
-R
 
 
 
@@ -384,7 +383,7 @@ R
 
 
 
-
+// ca c est une realistion 
 
 Objectifs de la solution proposée
 .
@@ -562,6 +561,9 @@ exécution
 
 
 
+
+
+
 Schema general du système
 
 
@@ -707,32 +709,6 @@ Bibliographie
 
 
 
-
-
-
-
-
-
-
-Solution déjà réaliser
-
-
-
-Il existe plusieurs projets qui permettent l'allocation de vélos. Voici quelques exemples :
-
-Vélib' à Paris : Vélib' est un système de vélos en libre-service disponible dans la ville de Paris depuis 2007. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station. Le système est géré par la société JCDecaux et compte environ 20 000 vélos répartis dans plus de 1 800 stations à travers la ville.
-
-Citi Bike à New York : Citi Bike est un système de vélos en libre-service disponible à New York depuis 2013. Le système compte plus de 14 000 vélos répartis dans plus de 800 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
-
-Santander Cycles à Londres : Santander Cycles est un système de vélos en libre-service disponible à Londres depuis 2010. Le système compte plus de 11 000 vélos répartis dans plus de 750 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
-
-Vélo'v à Lyon : Vélo'v est un système de vélos en libre-service disponible dans la ville de Lyon depuis 2005. Le système compte environ 5 000 vélos répartis dans plus de 300 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
-
-BIXI à Montréal : BIXI est un système de vélos en libre-service disponible à Montréal depuis 2009. Le système compte plus de 7 000 vélos répartis dans plus de 600 stations à travers la ville. Les utilisateurs peuvent louer un vélo à une station et le retourner à une autre station.
-
-
-
-Bien que ces projets aient tous pour objectif de fournir un système de vélos en libre-service pour permettre aux utilisateurs de se déplacer facilement et rapidement en ville, il existe des différences entre eux et notre projet. Voici quelques exemples :
 
 
 
