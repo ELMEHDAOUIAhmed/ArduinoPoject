@@ -158,7 +158,7 @@ L'IoT est un domaine en pleine expansion qui s'étend à de nombreux secteurs te
 
 Voici quelques domaines de l'IoT et ce qu'ils apportent :
 
-Santé : Les objets connectés peuvent aider à surveiller la santé des patients à distance, à prévenir les maladies, à améliorer la qualité de vie et à réduire les coûts des soins de santé.
+Santé : Les objets connectés ont révolutionné le secteur de la santé en offrant de nouvelles possibilités de surveiller et d'améliorer la santé des patients. Grâce à la collecte de données en temps réel et à l'analyse des données, les professionnels de la santé peuvent désormais offrir des soins personnalisés et plus efficaces.
 
 1-Les montres connectées : elles permettent aux patients de surveiller leur activité physique, leur rythme cardiaque et leur sommeil. Les données sont collectées en temps réel et peuvent être analysées par des médecins pour suivre l'état de santé du patient.
 
@@ -170,9 +170,9 @@ Santé : Les objets connectés peuvent aider à surveiller la santé des patient
 
 
 
-Logistique : L'IoT peut être utilisé pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité
+Logistique :
 
-L'IoT peut être utilisé dans le domaine de la logistique pour optimiser la gestion de la chaîne d'approvisionnement. Les capteurs IoT peuvent être utilisés pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité. Ces données peuvent être utilisées pour améliorer la gestion des stocks, réduire les temps d'attente et les coûts de transport, ainsi que pour fournir des informations en temps réel aux clients sur l'état de leur commande. Par exemple, la société UPS utilise des capteurs IoT pour suivre les mouvements de ses camions, des colis et des palettes, ce qui permet d'optimiser les itinéraires de livraison et de réduire les émissions de gaz à effet de serre.
+Il est également important de souligner que l'IoT peut être utilisé dans le domaine de la logistique pour optimiser la gestion de la chaîne d'approvisionnement. Les capteurs IoT peuvent être utilisés pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité. Ces données peuvent être utilisées pour améliorer la gestion des stocks, réduire les temps d'attente et les coûts de transport, ainsi que pour fournir des informations en temps réel aux clients sur l'état de leur commande. Par exemple, la société UPS utilise des capteurs IoT pour suivre les mouvements de ses camions, des colis et des palettes, ce qui permet d'optimiser les itinéraires de livraison et de réduire les émissions de gaz à effet de serre.
 
 
 
@@ -184,11 +184,50 @@ Agriculture : Les capteurs IoT peuvent aider à surveiller l'humidité du sol, l
 
 Industrie : Les objets connectés peuvent être utilisés pour surveiller et optimiser les processus de production industrielle, pour améliorer l'efficacité, réduire les coûts et augmenter la productivité.
 
-Maison connectée : L'IoT peut être utilisé pour connecter les différents appareils et systèmes domestiques, tels que la sécurité, la domotique, l'énergie, pour améliorer le confort, la commodité et la sécurité des occupants.
-
 
 Villes intelligentes : Les objets connectés peuvent être utilisés pour surveiller et gérer les infrastructures de la ville, telles que l'éclairage public, la circulation, les déchets, pour améliorer la qualité de vie des habitants et la durabilité environnementale.
 
+Systèmes de gestion des déchets : Des capteurs IoT sont installés dans les conteneurs à déchets pour signaler aux camions de collecte lorsqu'ils sont pleins, permettant ainsi d'optimiser les itinéraires de collecte. Cela a permis à la ville de Barcelone d'économiser plus de 30% sur les coûts de collecte des déchets.
+
+Éclairage public intelligent : Des luminaires LED connectés sont utilisés pour surveiller et ajuster la luminosité en fonction des conditions météorologiques, de l'heure de la journée et de la fréquentation des piétons et des véhicules. La ville de Los Angeles a ainsi économisé plus de 9 millions de dollars sur ses factures d'électricité grâce à l'installation de ces luminaires intelligents.
+
+Surveillance de la qualité de l'air : Des capteurs IoT sont installés dans les rues pour surveiller la qualité de l'air en temps réel. La ville de Paris a ainsi installé 100 capteurs dans les arrondissements les plus pollués de la ville pour fournir des données sur la qualité de l'air aux habitants et aux autorités locales.
+
+Gestion du trafic : Des capteurs IoT sont installés dans les feux de signalisation pour réguler le trafic en temps réel, en fonction de la densité du trafic et de la demande des piétons. La ville de Singapour a ainsi réduit les temps d'attente aux feux de signalisation de 25% et les temps de trajet de 10%.
+
+Location de vélos intelligents. Pour faciliter l'accès à des moyens de transport durables et économiques, cette solution permet de louer des vélos de manière intelligente, en utilisant des technologies de l'IoT telles que les capteurs et les systèmes de géolocalisation.
+
+Ces exemples montrent comment l'IoT est utilisé pour améliorer la qualité de vie des habitants et la durabilité environnementale dans les villes intelligentes.
+
+
+
+
+Dans chaque domaine, l'IoT apporte des avantages tels que la collecte de données en temps réel, l'optimisation des processus, la réduction des coûts et l'amélioration de la qualité de vie. Cependant, il est important de considérer les défis liés à la sécurité et à la protection des données pour s'assurer que cette technologie est utilisée de manière responsable et efficace.
+
+
+Challenges de l’Internet des Objets
+	
+La sécurité et la protection des données privées
+	
+Consommation énergétique de l’Internet des Objets
+	
+Impact environnementale de l’Internet des Objets
+	
+Internet des Objets et réseaux de capteurs sans fil
+	
+Normes, Standards et Technologies
+	
+Technologies de communication sans fil
+	
+Réseaux de communication longue portée
+	
+Protocoles
+	
+Technologies	
+
+Conclusion
+
+Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers le chap 2)
 examples :
 
 Solution de location des vélo 
@@ -197,18 +236,12 @@ Ville intelligente
 en va intéresser vers solution des vélo ( dans prochaine chapitre )
 
 
-Dans chaque domaine, l'IoT apporte des avantages tels que la collecte de données en temps réel, l'optimisation des processus, la réduction des coûts et l'amélioration de la qualité de vie. Cependant, il est important de considérer les défis liés à la sécurité et à la protection des données pour s'assurer que cette technologie est utilisée de manière responsable et efficace.
-
-
-
-Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers le chap 2)
-
 
 Chapitre 2
 Solution de location des vélo
-images
+(images  domaine )
 
-domaine 
+Réseau de capteurs sans fil et solutions de déploiement
 
 Airbike[1]:
 
@@ -228,7 +261,7 @@ Tableau : comparer les solution entre eux 1 , 2 ,3
 
 
 
-Notre solution :
+Notre solution : ( en va opter  pour cette solution )
 
 Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les visiteurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
 
