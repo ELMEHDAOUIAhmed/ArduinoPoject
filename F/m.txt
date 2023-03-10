@@ -2,6 +2,123 @@ Remerciements
 
 Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers notre promotrice et enseignante, Mme Bahia ZEBBANE, qui nous a accompagnés avec patience et enthousiasme tout au long de ce projet et pendant nos 2ème et 3ème années de licence. Nous souhaitons également remercier les membres du jury, x et y, pour avoir examiner et évaluer notre travail.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sommaire
+
+Introduction générale	8
+Généralités sur l’Internet des objets	9
+Introduction	9
+Définition de l’Internet des objets	9
+Potentiel de l’Internet des Objets	10
+Domaines d’application de l’Internet des Objets	10
+Environnement	11
+Santé	11
+Industriel	12
+Transport	12
+Ville intelligente	12
+Maison intelligente	12
+Challenges de l’Internet des Objets	13
+La sécurité et la protection des données privées	14
+Consommation énergétique de l’Internet des Objets	14
+Impact environnementale de l’Internet des Objets	14
+Internet des Objets et réseaux de capteurs sans fil	15
+Normes, Standards et Technologies	15
+Technologies de communication sans fil	16
+Réseaux de communication longue portée	17
+Protocoles	17
+Technologies	17
+Conclusion	17
+Réseau de capteurs sans fil et solutions de déploiement	18
+Introduction	18
+Architecture d’un réseau de capteurs sans fil	18
+Nœud capteur	19
+Passerelle	19
+Contraintes de conception d’un réseau de capteurs sans fil	20
+Types d’application des réseaux de capteurs	21
+Les applications orientées événements	21
+Les applications orientées surveillance	21
+Techniques de déploiement de capteurs sans fil	21
+Techniques basées sur le domaine	22
+Techniques basées sur l’usage	22
+Techniques basées sur le placement	22
+Solutions de déploiement d’un réseau de capteurs sans fil	24
+Réseau de capteurs sans fil dans un environnement doméstique	24
+Réseau de capteurs sans fil dans un environnement marin	25
+Réseau de capteurs sans fil déployé dans un environnement souterrain 26 2.7	Conclusion	27
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Introduction générale
 ("Ce sera écrit à la fin, lorsque nous aurons une meilleure compréhension de notre sujet.")
 .
@@ -10,6 +127,9 @@ Introduction générale
 
 Chapitre 1
 Etat de l’art
+1-Généralités sur iot
+
+
 Introduction
 
 L'IoT (Internet des Objets) est une technologie en pleine expansion qui est en train de changer notre façon de vivre et de travailler. L'IoT permet la connexion et la communication entre différents objets physiques tels que les smartphones, les montres connectées, les capteurs, les thermostats, les voitures, les maisons, les usines, les villes intelligentes, et bien d'autres encore. Ces objets peuvent collecter des données, communiquer entre eux et avec des systèmes informatiques pour offrir une multitude de services et d'applications, allant de la surveillance de la santé, la gestion de l'énergie, la sécurité, la gestion de la logistique, à la gestion de la production industrielle. L'IoT offre des possibilités infinies et a le potentiel de transformer de nombreux secteurs économiques en créant de nouveaux modèles d'affaires, en améliorant la qualité de vie des gens et en contribuant à la création d'une société plus durable.
@@ -24,6 +144,9 @@ Définition de l’Internet des objets
 
 	En fin de compte, l’Internet des objets est un concept qui manque d'une définition standard et unifiée, car il englobe un vaste domaine. Au lieu de cela, il se compose d'un ensemble de définitions, chacune mettant en évidence un aspect différent. Deux visions majeures de l'Internet des objets sont identifiables : la vision conceptuelle et la vision technique.[4]
 
+Archi
+couches 
+tech
 
 Potentiel de l’Internet des Objets
 
@@ -37,7 +160,21 @@ Voici quelques domaines de l'IoT et ce qu'ils apportent :
 
 Santé : Les objets connectés peuvent aider à surveiller la santé des patients à distance, à prévenir les maladies, à améliorer la qualité de vie et à réduire les coûts des soins de santé.
 
-Logistique : L'IoT peut être utilisé pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité.
+1-Les montres connectées : elles permettent aux patients de surveiller leur activité physique, leur rythme cardiaque et leur sommeil. Les données sont collectées en temps réel et peuvent être analysées par des médecins pour suivre l'état de santé du patient.
+
+2-Les piluliers connectés : ils aident les patients à prendre leur médicament à temps et à éviter les oublis. Certains modèles peuvent également envoyer des rappels aux patients et à leur médecin en cas de non-respect du traitement.
+
+3-Les capteurs de glycémie : ils permettent aux diabétiques de surveiller leur taux de glucose en temps réel et d'ajuster leur traitement en conséquence. Certains modèles peuvent également alerter les patients en cas de risque d'hypoglycémie.
+
+4-Les dispositifs de télémédecine : ils permettent aux médecins de suivre à distance l'état de santé de leurs patients et de leur donner des conseils médicaux en temps réel. Certains dispositifs peuvent également être utilisés pour réaliser des consultations vidéo à distance.
+
+
+
+Logistique : L'IoT peut être utilisé pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité
+
+L'IoT peut être utilisé dans le domaine de la logistique pour optimiser la gestion de la chaîne d'approvisionnement. Les capteurs IoT peuvent être utilisés pour suivre en temps réel les mouvements de produits, de biens et de marchandises à travers des systèmes de suivi et de traçabilité. Ces données peuvent être utilisées pour améliorer la gestion des stocks, réduire les temps d'attente et les coûts de transport, ainsi que pour fournir des informations en temps réel aux clients sur l'état de leur commande. Par exemple, la société UPS utilise des capteurs IoT pour suivre les mouvements de ses camions, des colis et des palettes, ce qui permet d'optimiser les itinéraires de livraison et de réduire les émissions de gaz à effet de serre.
+
+
 
 Sécurité : Les dispositifs IoT peuvent être utilisés pour surveiller les zones de haute sécurité, les biens et les personnes, pour assurer la sécurité physique, réduire les risques et améliorer les réponses en cas d'urgence.
 
@@ -47,31 +184,47 @@ Agriculture : Les capteurs IoT peuvent aider à surveiller l'humidité du sol, l
 
 Industrie : Les objets connectés peuvent être utilisés pour surveiller et optimiser les processus de production industrielle, pour améliorer l'efficacité, réduire les coûts et augmenter la productivité.
 
+Maison connectée : L'IoT peut être utilisé pour connecter les différents appareils et systèmes domestiques, tels que la sécurité, la domotique, l'énergie, pour améliorer le confort, la commodité et la sécurité des occupants.
+
+
 Villes intelligentes : Les objets connectés peuvent être utilisés pour surveiller et gérer les infrastructures de la ville, telles que l'éclairage public, la circulation, les déchets, pour améliorer la qualité de vie des habitants et la durabilité environnementale.
 
-Maison connectée : L'IoT peut être utilisé pour connecter les différents appareils et systèmes domestiques, tels que la sécurité, la domotique, l'énergie, pour améliorer le confort, la commodité et la sécurité des occupants.
+examples :
+
+Solution de location des vélo 
+Ville intelligente
+
+en va intéresser vers solution des vélo ( dans prochaine chapitre )
+
 
 Dans chaque domaine, l'IoT apporte des avantages tels que la collecte de données en temps réel, l'optimisation des processus, la réduction des coûts et l'amélioration de la qualité de vie. Cependant, il est important de considérer les défis liés à la sécurité et à la protection des données pour s'assurer que cette technologie est utilisée de manière responsable et efficace.
 
 
 
+Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers le chap 2)
 
 
+Chapitre 2
+Solution de location des vélo
+images
 
-Solution déjà réaliser
-Solution 1:
+domaine 
+
+Airbike[1]:
 
 Airbike[1] est une plateforme de partage de vélos sans station qui a pour but de rendre le transport en ville rapide, pratique et sain, et de fournir un moyen de couvrir la dernière partie du trajet pour atteindre sa destination. Airbike utilise une technologie brevetée développée en Australie qui se combine avec une application smartphone pour offrir un accès et une commodité accrue à un vélo lorsque vous en avez le plus besoin. Le système utilise la géolocalisation et les codes QR pour déverrouiller les vélos, et permet aux utilisateurs de payer pour leurs trajets à l'aide de l'application. Airbike vise à réduire la congestion routière et à créer un transport plus efficace dans les villes pour le bénéfice de tous.
 
-Solution 2 :
+Mobike[2] :
  
 Mobike[2] était une autre application populaire de partage de vélos qui était disponible avant la fin de l'année 2020. Mobike opérait dans de nombreuses villes à travers le monde et permettait aux utilisateurs de trouver et de louer des vélos en utilisant l'application Mobike. Les vélos de Mobike étaient équipés d'un GPS et pouvaient être localisés à l'aide de l'application. Les utilisateurs peuvent déverrouiller les vélos en utilisant un code QR et payer pour leurs trajets en utilisant l'application.
 
 
 
-Solution 3:
+BCycle[3]:
 
 San Antonio BCycle[3] est un système de partage de vélos en libre-service à San Antonio, Texas, aux États-Unis. Il offert stations de vélos équipées de systèmes de verrouillage électroniques, la technologie RFID pour suivre et gérer les vélos, une application mobile pour localiser les vélos et les stations, la gestion en ligne des comptes utilisateurs, ainsi que la technologie GPS pour collecter des données sur les itinéraires et les modèles d'utilisation des vélos, ce qui peut aider à améliorer le système et planifier des expansions futures. Le système vise à encourager une mobilité plus durable et à réduire la congestion routière dans la ville.
+
+Tableau : comparer les solution entre eux 1 , 2 ,3
 
 
 
@@ -80,7 +233,7 @@ Notre solution :
 Notre solution a pour but de rendre le transport des étudiants, des enseignants et de tous les visiteurs de l'USTHB très rapide et fiable, compte tenu de la brièveté de leur temps entre les sessions pour changer de salles de classe. Nous permettons aux utilisateurs de l'application de réserver des vélos à l'avance et utilisons la technologie NFC pour les déverrouiller, ce qui est plus rapide que la méthode des codes QR. Nous utilisons également la géolocalisation du téléphone pour suivre les utilisateurs et garantir la sécurité des vélos.
 
 
-Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers le chap 2)
+
 
 
 
@@ -142,9 +295,61 @@ Conclusion(petite conclusion pour résumer chap 1 et pour avoir basculement vers
 Chapitre 3
 Étude conceptuelle
 Introduction
+.motivation :
+schéma système arduino … 
+.aperçu vue globale du système ( comment le système va être utiliser)
 .
 .
-.
+.Partie application site web + application android
+3
+Système physique
+Application client
+App admin
+
+UML 2.0
+use case
+Sequence
+
+
+R
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -317,8 +522,14 @@ La plaque d'essai (Breadboard) est une plaque de prototypage qui permet de conne
 
 
 
+//Réalisation + justification
+capture d'écran app
+exécution
 
 
+
+
+Schema general du système
 
 
 Ressources logicielles
@@ -332,7 +543,10 @@ Arduino IDE
 Github Desktop
 C++
 Python
-
+.
+.
+.
+Structure de notre réseau
 
 
 .
