@@ -1,6 +1,3 @@
-Remerciements
-
-Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers notre promotrice et enseignante, Mme Bahia ZEBBANE, qui nous a accompagnés avec patience et enthousiasme tout au long de ce projet et pendant nos 2ème et 3ème années de licence. Nous souhaitons également remercier les membres du jury, x et y, pour avoir examiner et évaluer notre travail.
 
 
 
@@ -28,56 +25,6 @@ Nous tenons à exprimer toute notre reconnaissance et notre gratitude envers not
 
 
 
-
-
-
-
-
-
-
-
-Sommaire
-
-Introduction générale	8
-Généralités sur l’Internet des objets	9
-Introduction	9
-Définition de l’Internet des objets	9
-Potentiel de l’Internet des Objets	10
-Domaines d’application de l’Internet des Objets	10
-Environnement	11
-Santé	11
-Industriel	12
-Transport	12
-Ville intelligente	12
-Maison intelligente	12
-Challenges de l’Internet des Objets	13
-La sécurité et la protection des données privées	14
-Consommation énergétique de l’Internet des Objets	14
-Impact environnementale de l’Internet des Objets	14
-Internet des Objets et réseaux de capteurs sans fil	15
-Normes, Standards et Technologies	15
-Technologies de communication sans fil	16
-Réseaux de communication longue portée	17
-Protocoles	17
-Technologies	17
-Conclusion	17
-Réseau de capteurs sans fil et solutions de déploiement	18
-Introduction	18
-Architecture d’un réseau de capteurs sans fil	18
-Nœud capteur	19
-Passerelle	19
-Contraintes de conception d’un réseau de capteurs sans fil	20
-Types d’application des réseaux de capteurs	21
-Les applications orientées événements	21
-Les applications orientées surveillance	21
-Techniques de déploiement de capteurs sans fil	21
-Techniques basées sur le domaine	22
-Techniques basées sur l’usage	22
-Techniques basées sur le placement	22
-Solutions de déploiement d’un réseau de capteurs sans fil	24
-Réseau de capteurs sans fil dans un environnement doméstique	24
-Réseau de capteurs sans fil dans un environnement marin	25
-Réseau de capteurs sans fil déployé dans un environnement souterrain 26 2.7	Conclusion	27
 
 
 
@@ -206,13 +153,25 @@ Dans chaque domaine, l'IoT apporte des avantages tels que la collecte de donnée
 
 
 Challenges de l’Internet des Objets
+L'Internet des Objets présente plusieurs défis majeurs tels que la sécurité et la confidentialité des données, la gestion des énormes quantités de données générées par les dispositifs connectés, la standardisation et l'interopérabilité des systèmes, ainsi que la durée de vie limitée des dispositifs IoT et la nécessité de les mettre à jour régulièrement. La résolution de ces défis est essentielle pour permettre une adoption et une utilisation efficaces de l'IoT à grande échelle.
 	
 La sécurité et la protection des données privées
+La sécurité et la protection des données privées est un enjeu majeur dans l'Internet des Objets. Les objets connectés étant souvent liés à des données sensibles, il est primordial de les protéger contre les attaques malveillantes.
+
+Des piratages notables ont déjà eu lieu, tels que l'attaque contre Dyn en 2016 l'attaque de botnet Mirai[5] a été lancée en utilisant des dispositifs IoT tels que des caméras de sécurité connectées pour attaquer le fournisseur de services DNS Dyn(Dynamic Domain Name System), qui a paralysé plusieurs sites internet, ou encore l'attaque contre un casino de Las Vegas en 2017[6] qui a permis aux pirates de voler des informations confidentielles sur les clients d'un casino de Las Vegas en exploitant une vulnérabilité dans le système de contrôle de température d'un réservoir de poissons connecté à Internet, finalement En 2019, Walmart[7]a été victime d'une violation de données massives en raison d'un réfrigérateur intelligent connecté à Internet qui a été piraté. Les cybercriminels ont utilisé cette faille de sécurité pour accéder aux informations personnelles des clients, telles que les noms, les adresses e-mail et les numéros de téléphone. Cette attaque montre clairement les risques potentiels liés à la connectivité de l'Internet des objets et l'importance de renforcer la sécurité et la protection des données privées dans ce domaine en pleine croissance.
+
+Il est donc crucial de mettre en place des mesures de sécurité robustes pour protéger les objets connectés et les données qu'ils génèrent
+
 	
 Consommation énergétique de l’Internet des Objets
+
+On estime que le nombre d'appareils de l'Internet des Objets (IoT) dans le monde dépassera 75 milliards d'ici 2025 [8]. Bien que ces dispositifs aident à économiser l'énergie dans de nombreux domaines tels que la gestion de l'énergie, la domotique, etc., leur propre consommation d'énergie est élevée. Les dispositifs IoT doivent être alimentés en permanence pour rester connectés et collecter des données, ce qui augmente leur consommation d'énergie. Par exemple, les dispositifs qui utilisent la connectivité sans fil, comme le Wi-Fi ou le Bluetooth, consomment plus d'énergie que les appareils connectés par câble [9]. La consommation énergétique de l'IoT pose donc un défi pour l'efficacité énergétique globale.
+
 	
 Impact environnementale de l’Internet des Objets
 	
+
+
 Internet des Objets et réseaux de capteurs sans fil
 	
 Normes, Standards et Technologies
@@ -237,25 +196,96 @@ en va intéresser vers solution des vélo ( dans prochaine chapitre )
 
 
 
-Chapitre 2
+
+
 Solution de location des vélo
 (images  domaine )
-
 Réseau de capteurs sans fil et solutions de déploiement
-
 Airbike[1]:
 
 Airbike[1] est une plateforme de partage de vélos sans station qui a pour but de rendre le transport en ville rapide, pratique et sain, et de fournir un moyen de couvrir la dernière partie du trajet pour atteindre sa destination. Airbike utilise une technologie brevetée développée en Australie qui se combine avec une application smartphone pour offrir un accès et une commodité accrue à un vélo lorsque vous en avez le plus besoin. Le système utilise la géolocalisation et les codes QR pour déverrouiller les vélos, et permet aux utilisateurs de payer pour leurs trajets à l'aide de l'application. Airbike vise à réduire la congestion routière et à créer un transport plus efficace dans les villes pour le bénéfice de tous.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure
 Mobike[2] :
  
 Mobike[2] était une autre application populaire de partage de vélos qui était disponible avant la fin de l'année 2020. Mobike opérait dans de nombreuses villes à travers le monde et permettait aux utilisateurs de trouver et de louer des vélos en utilisant l'application Mobike. Les vélos de Mobike étaient équipés d'un GPS et pouvaient être localisés à l'aide de l'application. Les utilisateurs peuvent déverrouiller les vélos en utilisant un code QR et payer pour leurs trajets en utilisant l'application.
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+Figure
+
+
+
 BCycle[3]:
 
-San Antonio BCycle[3] est un système de partage de vélos en libre-service à San Antonio, Texas, aux États-Unis. Il offert stations de vélos équipées de systèmes de verrouillage électroniques, la technologie RFID pour suivre et gérer les vélos, une application mobile pour localiser les vélos et les stations, la gestion en ligne des comptes utilisateurs, ainsi que la technologie GPS pour collecter des données sur les itinéraires et les modèles d'utilisation des vélos, ce qui peut aider à améliorer le système et planifier des expansions futures. Le système vise à encourager une mobilité plus durable et à réduire la congestion routière dans la ville.
+San Antonio BCycle[3] est un système de partage de vélos en libre-service à San Antonio, Texas, aux États-Unis. Il offert stations de vélos équipées de systèmes de verrouillage électroniques, la technologie RFID pour suivre et gérer les vélos, une application mobile pour localiser les vélos et les stations, la gestion en ligne des comptes utilisateurs, ainsi que la technologie GPS pour collecter des données sur les itinéraires et les modèles d'utilisation des vélos, ce qui peut aider à améliorer le système et planifier des expansions futures. Le 
+système vise à encourager une mobilité plus durable et à réduire la congestion routière dans 
+la ville.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure
+
+
 
 Tableau : comparer les solution entre eux 1 , 2 ,3
 
@@ -337,7 +367,7 @@ schéma système arduino …
 3
 Système physique
 Application client
-App admin
+dashboard ( admin only)
 
 UML 2.0
 use case
@@ -383,7 +413,12 @@ Sequence
 
 
 
-// ca c est une realistion 
+
+
+
+Realisation
+
+
 
 Objectifs de la solution proposée
 .
@@ -422,6 +457,8 @@ L'Arduino Mega 2560 R3 est compatible avec le logiciel Arduino, qui permet de pr
 
 
 Figure x.x – Carte Arduino mega 2560 r3. [x]
+
+
 
 
 Module RFID Lecteur de cartes - RC522
@@ -483,6 +520,7 @@ Le module série Bluetooth HC-05 est facile à utiliser et peut être configuré
 
 
 Figure x.x – HC-05 série Bluetooth. [x]
+
 
 Serrure électrique solénoïde
 
@@ -638,10 +676,18 @@ Structure de notre réseau
 Bibliographie
 
 [1] https://airbike.network/about/ Fevrier 2023
+https://airbike.network/ Mars 2023
 [2] https://en.wikipedia.org/wiki/Mobike/ Fevrier 2023
 [3] https://sanantonio.bcycle.com/ Fevrier 2023
 [4] https://www.futura-sciences.com/tech/definitions/internet-internet-objets-15158/?source=post_page--------------------------- Mars 2023
-
+[5]https://www.theguardian.com/technology/2016/oct/26/ddos-attack-dyn-mirai-botnet
+Marts 2023
+[6]https://www.forbes.com/sites/leemathews/2017/07/27/criminals-hacked-a-fish-tank-to-steal-data-from-a-casino/?sh=371b1d4932b9 Mars 2023
+[7]Walmart 2019 needs source
+[8]https://www.statista.com/statistics/471264/iot-number-of-connected-devices-worldwide/
+Mars 2023
+[9]https://www.europarl.europa.eu/RegData/etudes/STUD/2021/690021/EPRS_STU(2021)690021_EN.pdf
+Mars 2023
 
 
 
