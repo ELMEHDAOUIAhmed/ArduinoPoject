@@ -10,7 +10,7 @@ We also use phone geolocation to track users and keep bikes safe.
 # Things to improve in the future
 # 1-make the code modular and easy to to edit via functions (80% done)
 # 2-make the code more secure using tests before executing functions (90% done)
-# 3-make the code dynamique ( next milestone) ( Via bluetooth Done)
+# 3-make the code dynamique (Via bluetooth Done)
 # 4- add password checks before allowing to add or clear uid codes from bluetooth
 # 5- change BT Pin code using AT commands ( didnt work fine another way)
 
@@ -29,7 +29,6 @@ BTserial.print("AT+PSWD=NewPassword\r\n"); didnt work fine another way
 # Red is - (Has power)
 
 
-# https://www.youtube.com/watch?v=vGZiePqgrnY&ab_channel=JustFrana
 
 
 ##########################################################################
