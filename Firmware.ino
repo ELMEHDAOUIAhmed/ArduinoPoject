@@ -21,13 +21,13 @@ String BT_String="";
 int allowedUIDs_count =0;
 byte uidByte[4];
 String allowedUIDs;
-String AdminUIDs[]={"80 63 2B 32"}; // static uids for admins to
+String AdminUIDs[]={""}; // static uids for admins to
 
 
 //things to fix, only 1 allowed dynamique uid from BT
 
 void setup() {
-  Serial.begin(9600); // Initialize serial communication 
+  Serial.begin(9600); // Initialize serial communication was 9600
   SPI.begin(); // Initialize SPI bus
   mfrc522.PCD_Init(); // Initialize MFRC522
   pinMode(LOCK_PIN, OUTPUT); // Initialize lock pin
@@ -35,7 +35,6 @@ void setup() {
 }
 
 void loop() {
-
 
     if(bthc05.available()) // Looking for Bluetooth Received Data
     {
@@ -50,7 +49,8 @@ void loop() {
     {
     allowedUIDs="";
     bthc05.println("Cleared");
-    allowedUIDs_count =0;
+    Serial.println("Cleared");
+     allowedUIDs_count =0;
     }
     else // IMPORTANT after add function to check for password before adding a new uid into allowed uids 
     {
@@ -129,10 +129,12 @@ void sendStatusAndRecords()
 // Function to send status and records via bluetooth
 
   // Check if the lock is currently open or closed
-  String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "Open" : "Closed";
+  String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "open" : "closed";
   // Construct a message with the lock status and some example records
-  String record = "Records: \n Lock is " + lockStatus + "\n";
+  String record = lockStatus;
+  //String record = "Records: \n Lock is " + lockStatus + "\n";
   bthc05.println(record);
+  Serial.println(record);  
 
 }
 
@@ -170,7 +172,7 @@ void openLock(String uid)
 
       String message = "Access granted, lock " + String(LOCK_PIN) + " opened , UID tag :" + uid;
       bthc05.println(message); // Send message via bluetooth
-      delay(1000);
+      delay(500);
 
 }
 
@@ -189,7 +191,7 @@ void closeLock(String uid)
 
       String message = "Access granted, lock " + String(LOCK_PIN) + " closed , UID tag :" + uid;
       bthc05.println(message); // Send message via bluetooth
-      delay(1000);
+      delay(500);
 }
 
 void denidedAccess(String uid)
