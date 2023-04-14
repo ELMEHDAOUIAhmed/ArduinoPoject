@@ -48,8 +48,8 @@ void loop() {
     else if (BT_String == "clear") // clear table from previous added uids
     {
     allowedUIDs="";
-    bthc05.println("Cleared");
-    Serial.println("Cleared");
+    Serial.println("cleared");
+    bthc05.print("cleared\n");
      allowedUIDs_count =0;
     }
     else // IMPORTANT after add function to check for password before adding a new uid into allowed uids 
@@ -62,13 +62,13 @@ void loop() {
         allowedUIDs=BT_String;
         allowedUIDs_count++;
         Serial.println("Added UID to allowed list: " + BT_String);
-        bthc05.println("Added UID to allowed list: " + BT_String);
+        bthc05.print("Added UID to allowed list: " + BT_String+"\n");
 
       }
         else if (allowedUIDs_count==MAX_UIDS)
         {
-        Serial.println("Maximum number of allowed UID tags reached. \n");
-        bthc05.println("Maximum number of allowed UID tags reached. \n");
+        Serial.println("Maximum number of allowed UID tags reached.");
+        bthc05.print("Maximum number of allowed UID tags reached\n");
         
 
         }
@@ -76,7 +76,7 @@ void loop() {
         else if (strcmp(allowedUIDs.c_str(),BT_String.c_str()) == 0) // wont be executed because Max allowed UID tags is 1 , wrote it incase we add more in future 
         {
         Serial.println("UID tag already in allowed list.");
-        bthc05.println("UID tag already in allowed list.");
+        bthc05.print("UID tag already in allowed list\n");
  
         }
 
@@ -131,9 +131,9 @@ void sendStatusAndRecords()
   // Check if the lock is currently open or closed
   String lockStatus = digitalRead(LOCK_PIN) == HIGH ? "open" : "closed";
   // Construct a message with the lock status and some example records
-  String record = lockStatus;
+  String record = lockStatus+"\n";
   //String record = "Records: \n Lock is " + lockStatus + "\n";
-  bthc05.println(record);
+  bthc05.print(record);
   Serial.println(record);  
 
 }
@@ -170,8 +170,8 @@ void openLock(String uid)
       Serial.print(LOCK_PIN);
       Serial.println(F("has been opened"));
 
-      String message = "Access granted, lock " + String(LOCK_PIN) + " opened , UID tag :" + uid;
-      bthc05.println(message); // Send message via bluetooth
+      String message = "Access granted, lock " + String(LOCK_PIN) + " opened , UID tag :" + uid+"\n";
+      bthc05.print(message); // Send message via bluetooth
       delay(500);
 
 }
@@ -189,8 +189,8 @@ void closeLock(String uid)
       Serial.print(LOCK_PIN);  
       Serial.println(F("has been closed"));    
 
-      String message = "Access granted, lock " + String(LOCK_PIN) + " closed , UID tag :" + uid;
-      bthc05.println(message); // Send message via bluetooth
+      String message = "Access granted, lock " + String(LOCK_PIN) + " closed , UID tag :" + uid+"\n";
+      bthc05.print(message); // Send message via bluetooth
       delay(500);
 }
 
@@ -200,16 +200,14 @@ void denidedAccess(String uid)
       Serial.println(uid);
       Serial.println(F("Access denied"));
 
-      String message ="Access denied, UID tag: " + uid + " is not allowed to open Lock " + String(LOCK_PIN);
-      bthc05.println(message); // Send message via bluetooth
+      String message ="Access denied, UID tag: " + uid + " is not allowed to open Lock " + String(LOCK_PIN)+"\n";
+      bthc05.print(message); // Send message via bluetooth
       delay(1500);      
       unlockAttempts++;
       if (unlockAttempts == 4) {
-      bthc05.println("Warning 4 attempts to unlock lock");
-      bthc05.println("Locking down for 30 seconds");
+      bthc05.print("Warning 4 attempts to unlock lock,Locking down for 30 seconds\n");
 
-      Serial.println(F("Warning 4 attempts to unlock lock"));
-      Serial.println(F("Locking down for 30 seconds"));
+      Serial.println(F("Warning 4 attempts to unlock lock,Locking down for 30 seconds"));
 
       delay(30000);
       }
@@ -223,5 +221,7 @@ void convertUidStringToBytes(String uidString, byte uidBytes[]) {
     uidBytes[i/2] = byteValue;
   }
 }
+
+
 
 
