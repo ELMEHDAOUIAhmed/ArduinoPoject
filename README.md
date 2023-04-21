@@ -29,14 +29,11 @@ BTserial.print("AT+PSWD=NewPassword\r\n"); didnt work fine another way
 
 
 
-
-##########################################################################
-
-Documentation for RFID Door Lock System Code:
+#Documentation for RFID Door Lock System Code:
 
 The code is written in C++ and it is used to control an RFID Door Lock System with the help of an Arduino board. It reads the unique IDs (UID) of RFID tags and compares them to a list of accepted UIDs. If the scanned UID is in the list, it unlocks the door. Additionally, the system can be controlled through Bluetooth by adding new UIDs to the list of accepted UIDs, clearing the list or getting the status of the lock.
 
-The code makes use of the following libraries:
+#The code makes use of the following libraries:
 
 SPI.h - library used for communication with the RFID reader module
 MFRC522.h - library used for interfacing with the RFID reader module
