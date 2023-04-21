@@ -6,8 +6,6 @@ We allow app users to reserve bikes in advance and use NFC technology to unlock 
 We also use phone geolocation to track users and keep bikes safe.
 
 
-
-
 # 1-make the code more secure using tests before executing functions (90% done)
 
 # 2- add password checks before allowing to add or clear uid codes from bluetooth
