@@ -40,7 +40,8 @@ MFRC522.h - library used for interfacing with the RFID reader module
 SoftwareSerial.h - library used to create a new serial port on pins that do not have built-in serial communication
 Wire.h - library used for I2C communication
 HardwareSerial.h - library used to communicate with the Bluetooth module
-Global variables:
+
+#Global variables:
 
 SS_PIN: Slave Select Pin used for the RFID reader module
 RST_PIN: Reset Pin used for the RFID reader module
