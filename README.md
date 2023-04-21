@@ -57,6 +57,7 @@ allowedUIDs_count: variable used to keep track of the number of accepted UIDs
 uidByte: byte array used to store the UID as a byte array
 allowedUIDs: string variable used to store the list of accepted UIDs
 AdminUIDs: string array variable used to store the static UIDs for admins
+
 #Functions:
 
 setup(): initializes the communication with the RFID reader module, the Bluetooth module, and the lock pin.
