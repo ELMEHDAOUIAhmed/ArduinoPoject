@@ -20,7 +20,7 @@ String BT_uid="";
 String BT_String="";
 int allowedUIDs_count =0;
 byte uidByte[4];
-String allowedUIDs;
+String allowedUIDs; // FOR TESTING REMOVE IT AFTER
 String AdminUIDs[]={""}; // static uids for admins to
 
 
