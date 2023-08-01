@@ -6,24 +6,16 @@ We allow app users to reserve bikes in advance and use NFC technology to unlock 
 We also use phone geolocation to track users and keep bikes safe.
 
 
-# 1-make the code more secure using tests before executing functions (90% done)
 
-# 2- add password checks before allowing to add or clear uid codes from bluetooth
+#Future improvements
 
-# 3- change BT Pin code using AT commands ( didnt work fine another way)
+1- add password checks before allowing to add or clear uid codes from bluetooth
+2- change BT Pin code using AT commands
 
-#
-BTserial.print("AT+NAME=NewName\r\n"); //didnt work fine another way
-BTserial.print("AT+PSWD=NewPassword\r\n"); didnt work fine another way
+example: change rate to 
+BTserial.print("AT+NAME=NewName\r\n"); 
+BTserial.print("AT+PSWD=NewPassword\r\n");
 
-
-
-# Buy new BUZZER and use code to make sound no opened , closed and denided access
-
-
-
-# Black is + ( Ground )
-# Red is - (Has power)
 
 
 
