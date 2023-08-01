@@ -12,7 +12,7 @@ We also use phone geolocation to track users and keep bikes safe.
 1- add password checks before allowing to add or clear uid codes from bluetooth
 2- change BT Pin code using AT commands
 
-example: change rate to 
+example: Dont forget to change serial rate to 38400
 BTserial.print("AT+NAME=NewName\r\n"); 
 BTserial.print("AT+PSWD=NewPassword\r\n");
 
